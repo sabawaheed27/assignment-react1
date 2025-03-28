@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: relative; 
+  padding: 15px 20px;
+  background-color: var(--header-bg, #fff);
+  color: var(--header-text, #000);
+  border-bottom: 1px solid #ddd;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.icon {
+  position: absolute;
+  right: 20px; 
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: var(--primary-color); 
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+
+

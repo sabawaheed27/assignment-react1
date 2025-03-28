@@ -1,0 +1,61 @@
+.scrollContainer {
+    scroll-behavior: smooth; 
+    overflow: hidden; 
+    
+  } 
+  
+  .contentContainer {
+    width: 100%;
+    padding-top: 2.5rem; 
+    padding-bottom: 5rem; 
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)); 
+    background-attachment: fixed; 
+  }
+  
+  @media (min-width: 768px) {
+    .contentContainer {
+      padding-left: 4rem; 
+      padding-right: 4rem; 
+    }
+  }
+  
+  .flexContainer {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.25rem; 
+    margin-top: 5rem; 
+    padding-right: 20px;
+
+  }
+  
+  @media (min-width: 768px) {
+    .flexContainer {
+      flex-direction: row; 
+      gap: 2.5rem; 
+      padding-top: 7rem; 
+
+    }
+  }
+  
+  .heading {
+    color: #2d3748; 
+    font-weight: 900; 
+    width: 50%; 
+    letter-spacing: -0.1rem; 
+    font-size: 3rem; 
+    
+  }
+  
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 3.2rem; 
+    }
+  }
+  
+
+
+   

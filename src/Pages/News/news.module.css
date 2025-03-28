@@ -1,0 +1,60 @@
+.newsContainer {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Prevents excessive stretching */
+    margin: auto;
+  }
+  
+  .newsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    align-items: start; /* Ensures proper alignment */
+  }
+  
+  .newsCard {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    border-radius: 10px;
+    border: 1px solid rgb(31, 29, 29);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    height: 100%; /* Ensures all cards have the same height */
+  }
+  
+  .newsCard:hover {
+    transform: scale(1.03);
+  }
+  
+  .newsImage {
+    width: 100%;
+    height: 200px; /* Adjust height to maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .newsContent {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .date {
+    color: gray;
+    font-size: 0.9rem;
+  }
+  
+  .readMore {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
